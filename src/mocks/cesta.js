@@ -34,7 +34,7 @@ const cesta={
                 imagem: batata,
             },
             {
-                nome:"Pepio",
+                nome:"Pepino",
                 imagem: pepino,
             },
             {
