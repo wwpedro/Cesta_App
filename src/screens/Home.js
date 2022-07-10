@@ -19,9 +19,8 @@ export default function Home() {
                             <Text>Encanto</Text>
                         </View>    
                     </View>
-                    </TouchableOpacity>
+                </TouchableOpacity>
             </View>
-
 
         </ScrollView>
       
