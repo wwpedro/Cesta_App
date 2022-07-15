@@ -1,8 +1,9 @@
 import React from "react";
-import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
 import {useNavigation} from '@react-navigation/native'
 
 import Encanto from "../../assets/encanto.jpeg"
+import IconFontAwesome from "react-native-vector-icons/FontAwesome";
 
 export default function Conteudos() {
 
@@ -37,11 +38,41 @@ export default function Conteudos() {
 
                     <View style={estilos.elenco}>
                         <Text style={estilos.titulo}>Personagens</Text>
+                        <View style={estilos.elencoScrowll}>
+                            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+                                <View style={estilos.personagem}>
+                                    <Image  source={Encanto} style={estilos.elencoImg}/>
+                                    <Text>Encanto</Text>
+                                </View>
+                                <View style={estilos.personagem}>
+                                    <Image  source={Encanto} style={estilos.elencoImg}/>
+                                    <Text>Encanto</Text>
+                                </View>
+                                <View style={estilos.personagem}>
+                                    <Image  source={Encanto} style={estilos.elencoImg}/>
+                                    <Text>Encanto</Text>
+                                </View>
+                                <View style={estilos.personagem}>
+                                    <Image  source={Encanto} style={estilos.elencoImg}/>
+                                    <Text>Encanto</Text>
+                                </View>
+                                <View style={estilos.personagem}>
+                                    <Image  source={Encanto} style={estilos.elencoImg}/>
+                                    <Text>Encanto</Text>
+                                </View>
+                            </ScrollView>
+                        </View>
                     </View>
 
                     <View style={estilos.classificacao}>
                         <Text style={estilos.titulo}>Classificação</Text>
-                        <View style={estilos.estrelas}></View>
+                        <View style={estilos.classificacaoEstrelas}>
+                            <IconFontAwesome name="star" size={30} color="#ffffff" style={estilos.classificacaoEstrela}></IconFontAwesome>
+                            <IconFontAwesome name="star" size={30} color="#ffffff" style={estilos.classificacaoEstrela}></IconFontAwesome>
+                            <IconFontAwesome name="star" size={30} color="#ffffff" style={estilos.classificacaoEstrela}></IconFontAwesome>
+                            <IconFontAwesome name="star" size={30} color="#ffffff" style={estilos.classificacaoEstrela}></IconFontAwesome>
+                            <IconFontAwesome name="star" size={30} color="#ffffff" style={estilos.classificacaoEstrela}></IconFontAwesome>
+                        </View>
                     </View>
                 </View>
             </View>
@@ -59,7 +90,7 @@ export default function Conteudos() {
 
 const estilos = StyleSheet.create({
     scrow:{
-        backgroundColor: "#1A0607" 
+        backgroundColor: "#1A0607",
     },
     tela:{
         alignItems:"center",
@@ -72,6 +103,7 @@ const estilos = StyleSheet.create({
         width: "100%",
         borderBottomLeftRadius: 50,
         flexDirection:"row",
+        marginTop:"15%"
     },
     imagemCapa:{
         width: "100%",
@@ -135,7 +167,34 @@ const estilos = StyleSheet.create({
         marginTop:30,
         height:"40%",
         width:"100%",
-        backgroundColor:"red",
+        backgroundColor:"black",
+        justifyContent:"center",
         alignItems:"center"
     },
+    elencoScrowll:{
+        flexDirection:"row",
+        paddingTop: 10,
+        padding:20,
+        paddingHorizontal:0
+        
+    },
+    elencoImg:{
+        width: 150,
+        height: 200,
+        margin:10,
+    },
+    personagem:{
+        alignItems:"center"
+    },
+
+
+    classificacaoEstrelas:{
+        justifyContent:"center",
+        alignItems:"center",
+        flexDirection:"row",
+        marginVertical:30
+    },
+    classificacaoEstrela:{
+        marginHorizontal:10
+    }
 })
