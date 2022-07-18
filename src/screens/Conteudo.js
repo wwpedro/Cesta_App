@@ -5,6 +5,7 @@ import {useNavigation} from '@react-navigation/native';
 import IconFontAwesome from "react-native-vector-icons/FontAwesome";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
+<<<<<<< HEAD
 import Encanto from "../../assets/Encanto/encanto.jpeg";
 import Maribel from "../../assets/Encanto/maribel.jpg";
 import Isabela from "../../assets/Encanto/isabela.jpg";
@@ -12,6 +13,9 @@ import Bruno from "../../assets/Encanto/bruno.jpg";
 import Luisa from "../../assets/Encanto/luisa.jpg";
 import Pepa from "../../assets/Encanto/pepa.jpg";
 import Dolores from "../../assets/Encanto/dolores.jpg";
+=======
+import Encanto from "../../assets/encanto.jpeg";
+>>>>>>> 8db6a70b3a23702e56474ce29840a69c8d53ab56
 
 export default function Conteudos() {
 
@@ -49,6 +53,7 @@ export default function Conteudos() {
                         <View style={estilos.elencoScrowll}>
                             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                                 <View style={estilos.personagem}>
+<<<<<<< HEAD
                                     <Image  source={Maribel} style={estilos.elencoImg}/>
                                     <Text style={estilos.textoConteudo}>Mirabel Madrigal</Text>
                                 </View>
@@ -71,6 +76,26 @@ export default function Conteudos() {
                                 <View style={estilos.personagem}>
                                     <Image  source={Dolores} style={estilos.elencoImg}/>
                                     <Text style={estilos.textoConteudo}>Dolores Madrigal</Text>
+=======
+                                    <Image  source={Encanto} style={estilos.elencoImg}/>
+                                    <Text style={estilos.textoConteudo}>Encanto</Text>
+                                </View>
+                                <View style={estilos.personagem}>
+                                    <Image  source={Encanto} style={estilos.elencoImg}/>
+                                    <Text style={estilos.textoConteudo}>Encanto</Text>
+                                </View>
+                                <View style={estilos.personagem}>
+                                    <Image  source={Encanto} style={estilos.elencoImg}/>
+                                    <Text style={estilos.textoConteudo}>Encanto</Text>
+                                </View>
+                                <View style={estilos.personagem}>
+                                    <Image  source={Encanto} style={estilos.elencoImg}/>
+                                    <Text style={estilos.textoConteudo}>Encanto</Text>
+                                </View>
+                                <View style={estilos.personagem}>
+                                    <Image  source={Encanto} style={estilos.elencoImg}/>
+                                    <Text style={estilos.textoConteudo}>Encanto</Text>
+>>>>>>> 8db6a70b3a23702e56474ce29840a69c8d53ab56
                                 </View>
                             </ScrollView>
                         </View>
