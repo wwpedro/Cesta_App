@@ -1,9 +1,10 @@
 import React from "react";
 import { StyleSheet, Text, View,TouchableOpacity, ScrollView, Image } from "react-native";
 import {useNavigation} from '@react-navigation/native'
+import IconFontAwesome from "react-native-vector-icons/FontAwesome";
 
 import Capa from "../../assets/OscarCapa.png";
-import Encanto from "../../assets/encanto.jpeg"
+import Encanto from "../../assets/Encanto/encanto.jpeg"
 
 export default function Home() {
     const navigation = useNavigation()
@@ -16,7 +17,8 @@ export default function Home() {
                     <View style={estilos.cartao}>
                         <Image  source={Encanto} style={estilos.imagemCartao} />
                         <View style={estilos.imagemCartaoInterno}>
-                            <Text>Encanto</Text>
+                        <IconFontAwesome name="film" size={30} color="#ffffff"></IconFontAwesome>
+                            <Text style={estilos.textoBranco}>Encanto</Text>
                         </View>    
                     </View>
                 </TouchableOpacity>
@@ -54,6 +56,9 @@ const estilos = StyleSheet.create({
         paddingTop: 30,
         textAlign: "center",
         color: "#A9A9A9"
+    },
+    textoBranco:{
+        color: "#ffffff"
     },
     cartao:{
         height: 150,

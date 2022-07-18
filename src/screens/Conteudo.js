@@ -1,9 +1,17 @@
 import React from "react";
-import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
-import {useNavigation} from '@react-navigation/native'
+import { Image, ScrollView, StyleSheet, Text, View,Linking } from "react-native";
+import {useNavigation} from '@react-navigation/native';
 
-import Encanto from "../../assets/encanto.jpeg"
 import IconFontAwesome from "react-native-vector-icons/FontAwesome";
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+
+import Encanto from "../../assets/Encanto/encanto.jpeg";
+import Maribel from "../../assets/Encanto/maribel.jpg";
+import Isabela from "../../assets/Encanto/isabela.jpg";
+import Bruno from "../../assets/Encanto/bruno.jpg";
+import Luisa from "../../assets/Encanto/luisa.jpg";
+import Pepa from "../../assets/Encanto/pepa.jpg";
+import Dolores from "../../assets/Encanto/dolores.jpg";
 
 export default function Conteudos() {
 
@@ -16,7 +24,7 @@ export default function Conteudos() {
                 <View style={estilos.capa}>
                     <Image  source={Encanto} style={estilos.imagemCapa} />
                     <View style={estilos.imagemCapaConteudo}>
-                        <Text onPress={()=>navigation.goBack()}>Voltar</Text>
+                        <IconFontAwesome onPress={()=>navigation.goBack()} name="arrow-left" size={20} color="#ffffff" style={estilos.classificacaoEstrela}></IconFontAwesome>
                     </View>    
                 </View>
                 <View style={estilos.conteudoView}>
@@ -32,7 +40,7 @@ export default function Conteudos() {
                                 que vive em um povoado na Colômbia. Cada membro tem um dom especial: força 
                                 excepcional, a capacidade de criar flores ou o poder de curar através da comida.
                             </Text>
-                            <Image></Image>
+                            <MaterialCommunityIcons name="movie-filter" size={30} color="#ffffff" onPress={()=>{Linking.openURL('https://www.youtube.com/watch?v=zRMicKd9IH8');}} ></MaterialCommunityIcons>
                         </View>
                     </View>
 
@@ -41,24 +49,28 @@ export default function Conteudos() {
                         <View style={estilos.elencoScrowll}>
                             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Encanto} style={estilos.elencoImg}/>
-                                    <Text>Encanto</Text>
+                                    <Image  source={Maribel} style={estilos.elencoImg}/>
+                                    <Text style={estilos.textoConteudo}>Mirabel Madrigal</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Encanto} style={estilos.elencoImg}/>
-                                    <Text>Encanto</Text>
+                                    <Image  source={Bruno} style={estilos.elencoImg}/>
+                                    <Text style={estilos.textoConteudo}>Bruno Madrigal</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Encanto} style={estilos.elencoImg}/>
-                                    <Text>Encanto</Text>
+                                    <Image  source={Isabela} style={estilos.elencoImg}/>
+                                    <Text style={estilos.textoConteudo}>Isabela Madrigal</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Encanto} style={estilos.elencoImg}/>
-                                    <Text>Encanto</Text>
+                                    <Image  source={Luisa} style={estilos.elencoImg}/>
+                                    <Text style={estilos.textoConteudo}>Luisa Madrigal</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Encanto} style={estilos.elencoImg}/>
-                                    <Text>Encanto</Text>
+                                    <Image  source={Pepa} style={estilos.elencoImg}/>
+                                    <Text style={estilos.textoConteudo}>Pepa Madrigal</Text>
+                                </View>
+                                <View style={estilos.personagem}>
+                                    <Image  source={Dolores} style={estilos.elencoImg}/>
+                                    <Text style={estilos.textoConteudo}>Dolores Madrigal</Text>
                                 </View>
                             </ScrollView>
                         </View>
@@ -115,7 +127,7 @@ const estilos = StyleSheet.create({
         width: "40%",
         borderBottomLeftRadius: 50,
         position:"absolute",
-        marginTop: 50,
+        marginTop: 70,
         marginLeft:10 
     },
     botao:{
@@ -141,9 +153,9 @@ const estilos = StyleSheet.create({
         fontSize: 40
     },
     texto:{
-        flexDirection: "row",
+        flexDirection: "column",
         width:"80%",
-        alignItems:"center",
+        alignItems:"flex-end",
         justifyContent:"center"
     },
     primeiraLetra:{
@@ -157,7 +169,7 @@ const estilos = StyleSheet.create({
 
     },
     textoConteudo:{
-        fontSize:20,
+        fontSize:15,
         color:"#ffffff"
     },
 
@@ -184,10 +196,12 @@ const estilos = StyleSheet.create({
         margin:10,
     },
     personagem:{
-        alignItems:"center"
+        alignItems:"center",
     },
 
-
+    classificacao:{
+        marginVertical:20
+    },
     classificacaoEstrelas:{
         justifyContent:"center",
         alignItems:"center",
