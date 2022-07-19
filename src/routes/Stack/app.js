@@ -2,6 +2,7 @@ import React from "react";
 
 // dizer quais são as rotas
 import Home from "../../screens/Home";
+import Filme1 from "../../screens/Filme1";
 import Conteudo from "../../screens/Conteudo";
 
 //importar create para trabalhar com navegacoes
@@ -15,6 +16,7 @@ export default function(){
         //recebe as telas
         <Navigator initialRouteName="Home" screenOptions={{headerShown:false}}>
             <Screen name="Home" component={Home} />
+            <Screen name="Filme1" component={Filme1} />
             <Screen name="Conteudo" component={Conteudo} />
         </Navigator>
     );
