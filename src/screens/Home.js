@@ -39,7 +39,7 @@ export default function Home() {
                     </View>
                 </TouchableOpacity>
                 
-                <TouchableOpacity onPress={()=>navigation.navigate("Conteudo")}>
+                <TouchableOpacity onPress={()=>navigation.navigate("Filme2")}>
                     <View style={estilos.cartao}>
                         <Image  source={Ritimo} style={estilos.imagemCartao} />
                         <View style={estilos.imagemCartaoInterno}>
