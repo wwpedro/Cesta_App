@@ -7,13 +7,7 @@ import { useFonts, Lora_400Regular } from '@expo-google-fonts/lora';
 import IconFontAwesome from "react-native-vector-icons/FontAwesome";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
-import Encanto from "../../assets/Encanto/encanto.jpeg";
-import Maribel from "../../assets/Encanto/maribel.jpg";
-import Isabela from "../../assets/Encanto/isabela.jpg";
-import Bruno from "../../assets/Encanto/bruno.jpg";
-import Luisa from "../../assets/Encanto/luisa.jpg";
-import Pepa from "../../assets/Encanto/pepa.jpg";
-import Dolores from "../../assets/Encanto/dolores.jpg";
+import Ritimo from "../../assets/Ritimo/ritimo.jpg"
 
 export default function Conteudos() {
 
@@ -32,7 +26,7 @@ export default function Conteudos() {
         <ScrollView style={estilos.scrow}>
             <View style={estilos.tela}>
                 <View style={estilos.capa}>
-                    <Image  source={Encanto} style={estilos.imagemCapa} />
+                    <Image  source={Ritimo} style={estilos.imagemCapa} />
                     <View style={estilos.imagemCapaConteudo}>
                         <IconFontAwesome onPress={()=>navigation.goBack()} name="arrow-left" size={20} color="#ffffff" style={estilos.classificacaoEstrela}></IconFontAwesome>
                     </View>    
@@ -40,15 +34,28 @@ export default function Conteudos() {
                 <View style={estilos.conteudoView}>
                     <View style={estilos.sobreFilme}>
                         <Text style={estilos.titulo}>
-                            Encanto
+                            No Ritmo do Coração
                         </Text>
                         <View style={estilos.texto}>            
                             <Text style={estilos.textoConteudo}>
-                                <Text style={estilos.primeiraLetra}>V</Text>
-                                encedor do Globo de Ouro de animação e um dos favoritos na disputa 
-                                do Oscar deste ano, conta a história dos Madrigal, uma família extraordinária 
-                                que vive em um povoado na Colômbia. Cada membro tem um dom especial: força 
-                                excepcional, a capacidade de criar flores ou o poder de curar através da comida.
+                                <Text style={estilos.primeiraLetra}>N</Text>
+                                o Ritmo do Coração conta a história de uma família com 
+                                deficiência auditiva que comanda um negócio de pesca em 
+                                Gloucester, nos Estados Unidos. Ruby (Emilia Jones), a 
+                                única pessoa da família que escuta, ajuda os pais e o 
+                                irmão surdo com as atividades do dia-a-dia. Mas por conta 
+                                disso, ela é vista como alguém estranha em sua escola, 
+                                isso até ela se juntar ao coral, onde acaba se envolvendo 
+                                romanticamente com um de seus colegas e começa a fazer 
+                                amizades. Com o tempo, ela percebe que tem uma grande 
+                                paixão por cantar e seu professor a encoraja a tentar 
+                                entrar em uma escola de música, já que sua voz é linda. 
+                                Enquanto isso, sua família luta para pagar as contas com 
+                                o negócio de pesca, pois novas taxas e sanções são impostas 
+                                pelo conselho local. A jovem, então, treina para ser aceita 
+                                na faculdade de Berklee, onde poderá seguir com o canto, mas 
+                                ela precisa decidir entre continuar ajudando sua família ou 
+                                ir atrás de seus sonhos.
                             </Text>
                             <MaterialCommunityIcons name="movie-filter" size={30} color="blck" onPress={()=>{Linking.openURL('https://www.youtube.com/watch?v=zRMicKd9IH8');}} ></MaterialCommunityIcons>
                         </View>
@@ -59,28 +66,40 @@ export default function Conteudos() {
                         <View style={estilos.elencoScrowll}>
                             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Maribel} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>Mirabel Madrigal</Text>
+                                    <Image  source={Ritimo} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>No Ritmo do Coração</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Bruno} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>Bruno Madrigal</Text>
+                                    <Image  source={Ritimo} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>No Ritmo do Coração</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Isabela} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>Isabela Madrigal</Text>
+                                    <Image  source={Ritimo} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>No Ritmo do Coração</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Luisa} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>Luisa Madrigal</Text>
+                                    <Image  source={Ritimo} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>No Ritmo do Coração</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Pepa} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>Pepa Madrigal</Text>
+                                    <Image  source={Ritimo} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>No Ritmo do Coração</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Dolores} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>Dolores Madrigal</Text>
+                                    <Image  source={Ritimo} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>No Ritmo do Coração</Text>
+                                </View>
+                                <View style={estilos.personagem}>
+                                    <Image  source={Ritimo} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>No Ritmo do Coração</Text>
+                                </View>
+                                <View style={estilos.personagem}>
+                                    <Image  source={Ritimo} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>No Ritmo do Coração</Text>
+                                </View>
+                                <View style={estilos.personagem}>
+                                    <Image  source={Ritimo} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>No Ritmo do Coração</Text>
                                 </View>
                             </ScrollView>
                         </View>
@@ -120,7 +139,7 @@ const estilos = StyleSheet.create({
         width: "100%",
         borderBottomLeftRadius: 50,
         flexDirection:"row",
-        marginTop:"15%"
+        marginTop:"35%"
     },
     imagemCapa:{
         width: "100%",
