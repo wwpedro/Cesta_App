@@ -8,6 +8,12 @@ import IconFontAwesome from "react-native-vector-icons/FontAwesome";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
 import Ritimo from "../../assets/Ritimo/ritimo.jpg"
+import Emilia from "../../assets/Ritimo/EmiliaJones.jpg"
+import DanielDurant from "../../assets/Ritimo/DanielDurant.jpg"
+import EugenioDerbez from "../../assets/Ritimo/EugenioDerbez.jpg"
+import FerdiaWalsh_Peelo from "../../assets/Ritimo/FerdiaWalsh_Peelo.jpg"
+import MarleeMatlin from "../../assets/Ritimo/MarleeMatlin.jpg"
+import TroyKotsur from "../../assets/Ritimo/TroyKotsur.jpg"
 
 export default function Conteudos() {
 
@@ -57,7 +63,7 @@ export default function Conteudos() {
                                 ela precisa decidir entre continuar ajudando sua família ou 
                                 ir atrás de seus sonhos.
                             </Text>
-                            <MaterialCommunityIcons name="movie-filter" size={30} color="blck" onPress={()=>{Linking.openURL('https://www.youtube.com/watch?v=zRMicKd9IH8');}} ></MaterialCommunityIcons>
+                            <MaterialCommunityIcons name="movie-filter" size={30} color="blck" onPress={()=>{Linking.openURL('https://www.youtube.com/watch?v=vVU2ixNLOt8');}} ></MaterialCommunityIcons>
                         </View>
                     </View>
 
@@ -66,40 +72,28 @@ export default function Conteudos() {
                         <View style={estilos.elencoScrowll}>
                             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Ritimo} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>No Ritmo do Coração</Text>
+                                    <Image  source={Emilia} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>Emilia Torn</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Ritimo} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>No Ritmo do Coração</Text>
+                                    <Image  source={DanielDurant} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>Daniel Durant</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Ritimo} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>No Ritmo do Coração</Text>
+                                    <Image  source={EugenioDerbez} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>Eugenio Derbez</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Ritimo} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>No Ritmo do Coração</Text>
+                                    <Image  source={FerdiaWalsh_Peelo} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>Ferdia Walsh-Peelo</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Ritimo} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>No Ritmo do Coração</Text>
+                                    <Image  source={MarleeMatlin} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>Marlee Matlin</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Ritimo} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>No Ritmo do Coração</Text>
-                                </View>
-                                <View style={estilos.personagem}>
-                                    <Image  source={Ritimo} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>No Ritmo do Coração</Text>
-                                </View>
-                                <View style={estilos.personagem}>
-                                    <Image  source={Ritimo} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>No Ritmo do Coração</Text>
-                                </View>
-                                <View style={estilos.personagem}>
-                                    <Image  source={Ritimo} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>No Ritmo do Coração</Text>
+                                    <Image  source={TroyKotsur} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>Troy Kotsur</Text>
                                 </View>
                             </ScrollView>
                         </View>
@@ -139,7 +133,7 @@ const estilos = StyleSheet.create({
         width: "100%",
         borderBottomLeftRadius: 50,
         flexDirection:"row",
-        marginTop:"35%"
+        marginTop:"10%"
     },
     imagemCapa:{
         width: "100%",
@@ -198,7 +192,7 @@ const estilos = StyleSheet.create({
     //elenco
     elenco:{
         marginTop:30,
-        height:"40%",
+        height:"30%",
         width:"100%",
         backgroundColor:"black",
         justifyContent:"center",
