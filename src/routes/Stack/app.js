@@ -4,6 +4,7 @@ import React from "react";
 import Home from "../../screens/Home";
 import Filme1 from "../../screens/Filme1";
 import Filme2 from "../../screens/Filme2";
+import Filme3 from "../../screens/Filme3";
 import Conteudo from "../../screens/Conteudo";
 
 //importar create para trabalhar com navegacoes
@@ -19,6 +20,7 @@ export default function(){
             <Screen name="Home" component={Home} />
             <Screen name="Filme1" component={Filme1} />
             <Screen name="Filme2" component={Filme2} />
+            <Screen name="Filme3" component={Filme3} />
             <Screen name="Conteudo" component={Conteudo} />
         </Navigator>
     );
