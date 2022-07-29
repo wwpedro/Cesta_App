@@ -7,13 +7,7 @@ import { useFonts, Lora_400Regular } from '@expo-google-fonts/lora';
 import IconFontAwesome from "react-native-vector-icons/FontAwesome";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
-import Ritimo from "../../assets/Ritimo/ritimo.jpg"
-import Emilia from "../../assets/Ritimo/EmiliaJones.jpg"
-import DanielDurant from "../../assets/Ritimo/DanielDurant.jpg"
-import EugenioDerbez from "../../assets/Ritimo/EugenioDerbez.jpg"
-import FerdiaWalsh_Peelo from "../../assets/Ritimo/FerdiaWalsh_Peelo.jpg"
-import MarleeMatlin from "../../assets/Ritimo/MarleeMatlin.jpg"
-import TroyKotsur from "../../assets/Ritimo/TroyKotsur.jpg"
+import Car from "../../assets/Drive/car.jpg"
 
 export default function Conteudos() {
 
@@ -32,7 +26,7 @@ export default function Conteudos() {
         <ScrollView style={estilos.scrow}>
             <View style={estilos.tela}>
                 <View style={estilos.capa}>
-                    <Image  source={Ritimo} style={estilos.imagemCapa} />
+                    <Image  source={Car} style={estilos.imagemCapa} />
                     <View style={estilos.imagemCapaConteudo}>
                         <IconFontAwesome onPress={()=>navigation.goBack()} name="arrow-left" size={20} color="#ffffff" style={estilos.classificacaoEstrela}></IconFontAwesome>
                     </View>    
@@ -40,28 +34,25 @@ export default function Conteudos() {
                 <View style={estilos.conteudoView}>
                     <View style={estilos.sobreFilme}>
                         <Text style={estilos.titulo}>
-                            No Ritmo do Coração
+                            Drive My Car
                         </Text>
                         <View style={estilos.texto}>            
                             <Text style={estilos.textoConteudo}>
-                                <Text style={estilos.primeiraLetra}>N</Text>
-                                o Ritmo do Coração conta a história de uma família com 
-                                deficiência auditiva que comanda um negócio de pesca em 
-                                Gloucester, nos Estados Unidos. Ruby (Emilia Jones), a 
-                                única pessoa da família que escuta, ajuda os pais e o 
-                                irmão surdo com as atividades do dia-a-dia. Mas por conta 
-                                disso, ela é vista como alguém estranha em sua escola, 
-                                isso até ela se juntar ao coral, onde acaba se envolvendo 
-                                romanticamente com um de seus colegas e começa a fazer 
-                                amizades. Com o tempo, ela percebe que tem uma grande 
-                                paixão por cantar e seu professor a encoraja a tentar 
-                                entrar em uma escola de música, já que sua voz é linda. 
-                                Enquanto isso, sua família luta para pagar as contas com 
-                                o negócio de pesca, pois novas taxas e sanções são impostas 
-                                pelo conselho local. A jovem, então, treina para ser aceita 
-                                na faculdade de Berklee, onde poderá seguir com o canto, mas 
-                                ela precisa decidir entre continuar ajudando sua família ou 
-                                ir atrás de seus sonhos.
+                                <Text style={estilos.primeiraLetra}>E</Text>
+                                m Drive My Car, adaptado de um conto de Haruki Murakami, o 
+                                filme segue duas pessoas solitárias que encontram coragem para
+                                 enfrentar o seu passado. Yusuke Kafuku (Hidetoshi Nishijima) é 
+                                 um ator e diretor de sucesso no teatro, casado com Oto 
+                                 (Reika Kirishima), uma mulher muito bonita, porém também uma 
+                                 roteirista com muitos segredos, com que divide sua vida, seu 
+                                 passado e colaboração artística. Quando Oto morre repentinamente, 
+                                 Kafuku é deixado com muitas perguntas sem respostas de seu relacionamento 
+                                 com ela e arrependimento de nunca conseguir compreendê-la completamente. 
+                                 Dois anos depois, ainda sem conseguir sair do luto, ele aceita dirigir uma 
+                                 peça no teatro de Hiroshima, embarcando em seu precioso carro Saab 900. Lá, 
+                                 ele conhece e tem que lidar com Misaki Watari (Toko Miura), uma jovem chauffeur, 
+                                 com que tem que deixar o carro. Apesar de suas dúvidas iniciais, uma relação muito 
+                                 especial se desenvolve entre os dois.
                             </Text>
                             <MaterialCommunityIcons name="movie-filter" size={30} color="blck" onPress={()=>{Linking.openURL('https://www.youtube.com/watch?v=vVU2ixNLOt8');}} ></MaterialCommunityIcons>
                         </View>
@@ -72,28 +63,20 @@ export default function Conteudos() {
                         <View style={estilos.elencoScrowll}>
                             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Emilia} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>Emilia Torn</Text>
+                                    <Image  source={Car} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>Drive My Car</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={DanielDurant} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>Daniel Durant</Text>
+                                    <Image  source={Car} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>Drive My Car</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={EugenioDerbez} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>Eugenio Derbez</Text>
+                                    <Image  source={Car} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>Drive My Car</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={FerdiaWalsh_Peelo} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>Ferdia Walsh-Peelo</Text>
-                                </View>
-                                <View style={estilos.personagem}>
-                                    <Image  source={MarleeMatlin} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>Marlee Matlin</Text>
-                                </View>
-                                <View style={estilos.personagem}>
-                                    <Image  source={TroyKotsur} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>Troy Kotsur</Text>
+                                    <Image  source={Car} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>Drive My Car</Text>
                                 </View>
                             </ScrollView>
                         </View>
