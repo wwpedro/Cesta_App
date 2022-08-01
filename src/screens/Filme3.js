@@ -8,6 +8,10 @@ import IconFontAwesome from "react-native-vector-icons/FontAwesome";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
 import Car from "../../assets/Drive/car.jpg"
+import Reika from "../../assets/Drive/ReikaKirishima.jpg"
+import Toko from "../../assets/Drive/TokoMiura.jpg"
+import Hidetoshi from "../../assets/Drive/HidetoshiNishijima.jpg"
+import Sonia from "../../assets/Drive/SoniaYuan.jpg"
 
 export default function Conteudos() {
 
@@ -63,20 +67,20 @@ export default function Conteudos() {
                         <View style={estilos.elencoScrowll}>
                             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Car} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>Drive My Car</Text>
+                                    <Image  source={Reika} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>Reika Kirishima</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Car} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>Drive My Car</Text>
+                                    <Image  source={Toko} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>Toko Miura</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Car} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>Drive My Car</Text>
+                                    <Image  source={Hidetoshi} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>Hidetoshi Nishijima</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Car} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>Drive My Car</Text>
+                                    <Image  source={Sonia} style={estilos.elencoImg}/>
+                                    <Text style={estilos.pessoaElenco}>Sonia Yuan</Text>
                                 </View>
                             </ScrollView>
                         </View>
