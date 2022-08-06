@@ -38,25 +38,26 @@ export default function Conteudos() {
                 <View style={estilos.conteudoView}>
                     <View style={estilos.sobreFilme}>
                         <Text style={estilos.titulo}>
-                            Drive My Car
+                            Summer of Soul
                         </Text>
                         <View style={estilos.texto}>            
                             <Text style={estilos.textoConteudo}>
-                                <Text style={estilos.primeiraLetra}>E</Text>
-                                m Drive My Car, adaptado de um conto de Haruki Murakami, o 
-                                filme segue duas pessoas solitárias que encontram coragem para
-                                 enfrentar o seu passado. Yusuke Kafuku (Hidetoshi Nishijima) é 
-                                 um ator e diretor de sucesso no teatro, casado com Oto 
-                                 (Reika Kirishima), uma mulher muito bonita, porém também uma 
-                                 roteirista com muitos segredos, com que divide sua vida, seu 
-                                 passado e colaboração artística. Quando Oto morre repentinamente, 
-                                 Kafuku é deixado com muitas perguntas sem respostas de seu relacionamento 
-                                 com ela e arrependimento de nunca conseguir compreendê-la completamente. 
-                                 Dois anos depois, ainda sem conseguir sair do luto, ele aceita dirigir uma 
-                                 peça no teatro de Hiroshima, embarcando em seu precioso carro Saab 900. Lá, 
-                                 ele conhece e tem que lidar com Misaki Watari (Toko Miura), uma jovem chauffeur, 
-                                 com que tem que deixar o carro. Apesar de suas dúvidas iniciais, uma relação muito 
-                                 especial se desenvolve entre os dois.
+                                <Text style={estilos.primeiraLetra}>S</Text>
+                                ummer of Soul é parte filme musical, parte registro 
+                                histórico criado em torno de um evento épico que celebrou
+                                 a história, cultura e moda negra. Ao longo de seis 
+                                 semanas no verão de 1969, a apenas 160 quilômetros 
+                                 ao sul de Woodstock, o Harlem Cultural Festival foi filmado 
+                                 no Mount Morris Park (agora Marcus Garvey Park). O filme captura 
+                                 um empolgante momento cultural nos Estados Unidos, embora 
+                                 subestimado historicamente. Entrevistas com artistas 
+                                 que participaram do evento são intercaladas com 
+                                 apresentações de shows nunca antes vistos 
+                                 de Stevie Wonder, Nina Simone, Sly and the 
+                                 Family Stone, Gladys Knight and the Pips, Mahalia Jackson, 
+                                 B.B. King, The 5th Dimension e muito outros. O lendário Festival 
+                                 Cultural Harlem 1969, celebrou a música e a cultura afro-americana 
+                                 e promoveu o orgulho e a unidade negra, naquele momento do país.
                             </Text>
                             <MaterialCommunityIcons name="movie-filter" size={30} color="blck" onPress={()=>{Linking.openURL('https://www.youtube.com/watch?v=vVU2ixNLOt8');}} ></MaterialCommunityIcons>
                         </View>
@@ -68,19 +69,19 @@ export default function Conteudos() {
                             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                                 <View style={estilos.personagem}>
                                     <Image  source={Reika} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>Reika Kirishima</Text>
+                                    <Text style={estilos.pessoaElenco}>Summer of Soul</Text>
                                 </View>
                                 <View style={estilos.personagem}>
                                     <Image  source={Toko} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>Toko Miura</Text>
+                                    <Text style={estilos.pessoaElenco}>Summer of Soul</Text>
                                 </View>
                                 <View style={estilos.personagem}>
                                     <Image  source={Hidetoshi} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>Hidetoshi Nishijima</Text>
+                                    <Text style={estilos.pessoaElenco}>Summer of Soul</Text>
                                 </View>
                                 <View style={estilos.personagem}>
                                     <Image  source={Sonia} style={estilos.elencoImg}/>
-                                    <Text style={estilos.pessoaElenco}>Sonia Yuan</Text>
+                                    <Text style={estilos.pessoaElenco}>Summer of Soul</Text>
                                 </View>
                             </ScrollView>
                         </View>
