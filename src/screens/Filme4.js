@@ -7,11 +7,8 @@ import { useFonts, Lora_400Regular } from '@expo-google-fonts/lora';
 import IconFontAwesome from "react-native-vector-icons/FontAwesome";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
-import Car from "../../assets/Drive/car.jpg"
-import Reika from "../../assets/Drive/ReikaKirishima.jpg"
-import Toko from "../../assets/Drive/TokoMiura.jpg"
-import Hidetoshi from "../../assets/Drive/HidetoshiNishijima.jpg"
-import Sonia from "../../assets/Drive/SoniaYuan.jpg"
+import Summer from "../../assets/Summer/summer.jpg"
+
 
 export default function Conteudos() {
 
@@ -30,7 +27,7 @@ export default function Conteudos() {
         <ScrollView style={estilos.scrow}>
             <View style={estilos.tela}>
                 <View style={estilos.capa}>
-                    <Image  source={Car} style={estilos.imagemCapa} />
+                    <Image  source={Summer} style={estilos.imagemCapa} />
                     <View style={estilos.imagemCapaConteudo}>
                         <IconFontAwesome onPress={()=>navigation.goBack()} name="arrow-left" size={20} color="#ffffff" style={estilos.classificacaoEstrela}></IconFontAwesome>
                     </View>    
@@ -68,19 +65,19 @@ export default function Conteudos() {
                         <View style={estilos.elencoScrowll}>
                             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Reika} style={estilos.elencoImg}/>
+                                    <Image  source={Summer} style={estilos.elencoImg}/>
                                     <Text style={estilos.pessoaElenco}>Summer of Soul</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Toko} style={estilos.elencoImg}/>
+                                    <Image  source={Summer} style={estilos.elencoImg}/>
                                     <Text style={estilos.pessoaElenco}>Summer of Soul</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Hidetoshi} style={estilos.elencoImg}/>
+                                    <Image  source={Summer} style={estilos.elencoImg}/>
                                     <Text style={estilos.pessoaElenco}>Summer of Soul</Text>
                                 </View>
                                 <View style={estilos.personagem}>
-                                    <Image  source={Sonia} style={estilos.elencoImg}/>
+                                    <Image  source={Summer} style={estilos.elencoImg}/>
                                     <Text style={estilos.pessoaElenco}>Summer of Soul</Text>
                                 </View>
                             </ScrollView>

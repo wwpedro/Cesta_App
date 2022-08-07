@@ -64,7 +64,7 @@ export default function Home() {
                         <Image  source={Summer} style={estilos.imagemCartao} />
                         <View style={estilos.imagemCartaoInterno}>
                             <IconFontAwesome name="film" size={30} color="#ffffff"></IconFontAwesome>
-                            <Text style={estilos.textoBranco}>Summer of Soul</Text>
+                            <Text style={estilos.textoBranco}>cc</Text>
                         </View>    
                     </View>
                 </TouchableOpacity>
